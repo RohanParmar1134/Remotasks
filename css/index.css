@@ -1,0 +1,680 @@
+@font-face {
+    font-family: "font1";
+    src: url("../assets/font/Lexend-VariableFont_wght.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "font1";
+}
+
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ! ---------------------- section-1 ---------------------------------------------*/
+
+#headingText{
+    margin: auto;
+    height: inherit;
+    word-wrap: break-word;
+    color: white;
+    width: 42vw;
+    font-weight: 400;
+    text-align: start;
+    padding-top: 100px;
+    word-break: break-word;
+}
+
+#headingName{
+    font-size: 50px;
+    font-weight: bold;
+}
+.headingButton,.subscribe,.navButton{
+    margin-top: 10px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: rgb(179, 102, 255);
+    border: 0px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.actionIcon{
+  visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+
+
+.header{
+    height: 500px;
+    background-image: url('../assets/Images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#darkBack{
+    height: 450px;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.856);
+    display: flex;
+    justify-content: center;
+    font-family: 'Lexend Thin';
+    align-items: center;
+    height: 60px;
+  }
+
+  .navbarItems {
+    float: left;
+    
+  }
+  
+
+  li:first-child{
+    position: absolute;
+    left: 0;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  li:last-child{
+    position: absolute;
+    right: 0;
+  }
+
+
+  .navbarItems a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbarItems a:hover:nth-child(n+2){
+    background-color: #111;
+  }
+  
+ .navButton{
+  padding: 0;
+  margin: 3px;
+ }
+
+
+/* ! ---------------------- section-2 ---------------------------------------------*/
+
+
+  
+  #aboutMe{
+    background-image: url("../assets/Images/background6.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 50px 0px;
+  }
+
+  #girlImg{
+    height: auto;
+    width: 25%;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+
+  #aboutCard,.featuresCard,.competenceCard,.clientImgBg,#stayBg,#joinInput{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #ffffff8e;
+    box-shadow: 1px 1px 100px 0.1px rgba(205, 200, 200, 0.728);
+    backdrop-filter: blur(5px);
+  }
+
+  #aboutCard{
+    height: 20vw;
+    width: 30vw;
+    margin-left: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 30px;
+  }
+
+  #aboutHeading{
+
+    font-weight: bolder;
+    font-size: 3vw;
+    padding-left: 20px;
+    color: rgb(0, 38, 77);
+}
+
+#aboutContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.aboutContentText{
+    color: rgb(0, 38, 77);
+    font-size: 1vw;
+    padding: 20px;
+  }
+
+/* ! ---------------------- section-3 ---------------------------------------------*/
+
+
+#features{
+  height: fit-content;
+  padding: 50px 0px;
+  background-image: url("../assets/Images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+#featuresContent{
+  display: flex;
+  flex-shrink: 0 !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.featuresCard{
+  color: rgb(37, 37, 37);
+  /* min-width: 25%; */
+  /* max-width: 20%; */
+  width: 20%;
+  height: fit-content;
+  padding: 30px 20px;
+  display: flex;
+  flex-shrink: 0 !important;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.fCardIcon{
+  background-color: #ffffff8e;
+  font-size: 25px;
+  border-radius: 50%;
+  color: rgb(132, 67, 197);
+  padding: 15px;
+
+}
+
+#featuresHeading{
+  color: white;
+}
+#featuresDescription{
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.fCardHeading{
+  padding-top: 20px;
+  font-weight: bold;
+  color: rgb(0, 38, 77);
+
+}
+.fCardContent{
+  font-size: 12px;
+  padding: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(0, 38, 77);
+
+}
+
+/* ! ---------------------- section-4 ---------------------------------------------*/
+
+
+#competence{
+  height: 500px;
+  background-image: url("../assets/Images/background6.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressImg{
+  height: auto;
+  width: 25%;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.competenceCard{
+box-sizing: border-box;
+width: 35%;
+padding:80px 50px 80px 100px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+#competenceHeading{
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(0, 38, 77);
+  padding-bottom: 10px;
+}
+#competenceDescription{
+  font-weight: 600;
+  font-size: 10px;
+  color: rgba(0, 39, 77, 0.539);
+  padding-bottom: 20px;
+}
+
+.progressLabel{
+display: flex;
+justify-content: space-between;
+font-weight: 600;
+font-size: 10px;
+color: rgba(0, 39, 77, 0.539);
+}
+
+#progress{
+  width: 90%;
+}
+meter{
+  width: 100%;
+}
+meter::-webkit-meter-optimum-value {
+  background-color: rgb(245,94,40);
+}
+
+#ourClients{
+  background-image: url("../assets/Images/background4.jpg");
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#clients{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin: 0px 20px;
+}
+#clientsHeading{
+  font-weight: 300;
+  color: rgb(3, 32, 60);
+  padding-bottom: 10px;
+}
+#clientsDescription{
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(3, 32, 60);
+  padding-bottom: 10px;
+}
+.clientImgBg{
+  height: fit-content;
+  padding: 30px;
+}
+.clientImg{
+  height: 80px;
+}
+
+#stayConnected{
+  background-image: url("../assets/Images/background5.jpg");
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#stayBg{
+  height: 80%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#stayContent{
+  display: flex;
+  justify-content: space-around;
+  width: inherit;
+  padding-top: 50px;
+}
+.stayContentItems{
+  display: flex;
+  width: inherit;
+  justify-content: center;
+  align-items: baseline;
+  color: rgb(3, 32, 60);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.stayIcon{
+  color: rgb(3, 32, 60);
+  padding-right: 20px;
+}
+
+.stayHeading{
+  color: rgb(3, 32, 60);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#whiteBack{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.409);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#join{
+  background-image: url("../assets/Images/background7.jpg");
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.subscribe{
+  border-radius: 0px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+#joinInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 20px 40px;
+}
+
+input[type=email]{
+  width: 30vw;
+  height: 40px;
+  /* margin-right: 20px; */
+  border: none;
+}
+
+
+.inputIcon{
+  position: relative;
+  float: right;
+  top: 10px;
+  right: 30px;
+  color: red;
+}
+
+#joinText{
+  /* padding-left: 30px; */
+  font-weight: 600;
+  color: rgb(3, 32, 60);
+}
+
+#footer{
+  height: 300px;
+  background-color: rgb(2, 2, 36);
+  color: white;
+  width: 100%;
+}
+
+#footerItem2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footerMain{
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerItemDiv{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+  width: 8%;
+}
+
+.footerHeading{
+  font-weight: bolder;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.footerContent{
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 0px;
+}
+.footerAboutUs{
+  margin-right: 20%;
+  width: 20%;
+
+}
+  @media screen and (max-width:768px) {
+    li:nth-child(n+2){
+            visibility: hidden;
+    }
+    .actionIcon{
+        visibility: visible;
+    }
+
+    #headingText{
+      width: 80%;
+    }
+
+    #aboutMe{
+      flex-direction: column;
+      height: fit-content;
+      padding: 80px 0px;
+      align-items: center;
+    }
+    #aboutCard{
+      width: 85%;
+      margin-left: 0px;
+      margin-top: 20px;
+      margin-right: 0;
+    }
+
+    #aboutContent{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #aboutHeading{
+      padding: 0;
+    }
+    .aboutContentText{
+      padding: 5px 0;
+    }
+    #girlImg{
+      width: 85%;
+      height: auto;
+      margin-left: 0;
+    }
+
+    #features{
+      height: fit-content;
+      padding: 50px 0px;
+    }
+    #featuresContent{
+      flex-wrap: wrap;
+    }
+    .featuresCard{
+      width: 35%;
+    }
+    #competence{
+      flex-direction: column;
+      height: fit-content;
+      padding: 80px 0px;
+    }
+    #progressImg{
+      width: 85%;
+      height: auto;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+    .competenceCard{
+      width: 85%;
+      margin: 0;
+    }
+    #clients{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+
+    #stayBg{
+      width: 85%;
+      text-align: center;
+    }
+
+    #join{
+      flex-direction: column;
+      padding: 30px 0px;
+    }
+
+    #footerMain{
+      flex-wrap: wrap;
+      padding: 50px 0px;
+    }
+    .footerItemDiv{
+      width: 40%;
+    }
+
+    #footer{
+      height: fit-content;
+    }
+
+    .footerAboutUs{
+      margin: 0;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+  #headingText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #featuresContent{
+    flex-direction: column;
+    align-items: center;
+  }
+  .featuresCard{
+    width: 75%;
+    margin: 10px;
+  }
+  .competenceCard{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  #ourClients{
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  #clients{
+    flex-direction: column;
+    width: 90%;
+  }
+  .clientImgBg{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .stayHeading{
+    font-size: 30px;
+  }
+  #stayBg{
+    padding: 10px;
+  }
+  #stayContent{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stayContentItems{
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  #joinInput{
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 20px 20px;
+    width: 80%;
+  }
+  #joinInputWithIcon{
+    width: 100%;
+  }
+  input[type=email]{
+    width: 100%;
+  }
+  .inputIcon{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .subscribe{
+    width: 100%;
+  }
+  #whiteBack{
+    flex-direction: column;
+  }
+
+
+  #footerMain{
+    flex-direction: column;
+  }
+  .footerItemDiv{
+    align-items: center;
+  }
+  .footerAboutUs{
+    align-items: center;
+    justify-content: center;
+  }
+  .footerContent{
+    text-align: center;
+  }
+}
+
