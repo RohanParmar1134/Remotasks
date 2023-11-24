@@ -1,14 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "font1";
+}
 @font-face {
     font-family: "font1";
     src: url("../assets/font/Lexend-VariableFont_wght.ttf");
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "font1";
-}
-
 html,body{
   width: 100%;
   overflow-x: hidden;
@@ -24,7 +22,10 @@ html,body{
     width: 42vw;
     font-weight: 400;
     text-align: start;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 100px; */
     word-break: break-word;
 }
 
@@ -43,19 +44,21 @@ html,body{
     font-weight: bold;
 }
 
+
 .actionIcon{
   visibility: hidden;
-    position: absolute;
+    position: fixed;
     right: 20px;
-    top: 10px;
+    top: 12px;
     font-size: 30px;
     color: white;
+    transition-property: all;
+    transition-duration: 0.5s;
+    z-index: 1;
 }
-
-
-
-
-
+.actionIcon:hover{
+  transform: scale(1.2);
+}
 
 .header{
     height: 500px;
@@ -65,39 +68,34 @@ html,body{
 }
 
 #darkBack{
-    height: 450px;
+    height: inherit;
     width: inherit;
     background-color: rgba(0, 0, 0, 0.726);
 }
 
 #navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(0, 0, 0, 0.623);
     display: flex;
     justify-content: center;
-    font-family: 'Lexend Thin';
     align-items: center;
     height: 60px;
-  }
-
-  .navbarItems {
-    float: left;
-    
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* position: -webkit-sticky; */
   }
   
-
   li:first-child{
     position: absolute;
-    left: 0;
+    left: 30px;
     font-weight: bolder;
     font-size: 20px;
   }
   li:last-child{
     position: absolute;
-    right: 0;
+    right: 40px;
   }
 
 
@@ -109,10 +107,10 @@ html,body{
     text-decoration: none;
   }
   
-  .navbarItems a:hover:nth-child(n+2){
+  /* .navbarItems a:hover{
     background-color: #111;
-  }
-  
+  } */
+
  .navButton{
   padding: 0;
   margin: 3px;
@@ -150,7 +148,7 @@ html,body{
 
   #aboutCard{
     height: 20vw;
-    width: 30vw;
+    width: 44vw;
     margin-left: 20px;
     padding-left: 20px;
     display: flex;
@@ -266,14 +264,14 @@ html,body{
 
 #progressImg{
   height: auto;
-  width: 25%;
+  width: 30%;
   border-radius: 20px;
   margin-left: 20px;
 }
 
 .competenceCard{
 box-sizing: border-box;
-width: 35%;
+width: 40%;
 padding:80px 50px 80px 100px;
 display: flex;
 flex-direction: column;
@@ -295,6 +293,8 @@ margin-right: 20px;
   padding-bottom: 20px;
 }
 
+/* ! ---------------------- section-5 ---------------------------------------------*/
+
 .progressLabel{
 display: flex;
 justify-content: space-between;
@@ -312,6 +312,9 @@ meter{
 meter::-webkit-meter-optimum-value {
   background-color: rgb(245,94,40);
 }
+
+
+/* ! ---------------------- section-6---------------------------------------------*/
 
 #ourClients{
   background-image: url("../assets/Images/background4.jpg");
@@ -350,15 +353,26 @@ meter::-webkit-meter-optimum-value {
   height: 80px;
 }
 
+
+/* ! ---------------------- section-7 ---------------------------------------------*/
+
+#whiteBackStay{
+  width: auto;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.409);
+
+}
+
+
 #stayConnected{
   background-image: url("../assets/Images/background5.jpg");
   background-size: cover;
   background-position: center;
   width: auto;
   height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #stayBg{
   height: 80%;
@@ -396,12 +410,14 @@ meter::-webkit-meter-optimum-value {
   font-weight: bolder;
 }
 
-#whiteBack{
+/* ! ---------------------- section-8 ---------------------------------------------*/
+
+#whiteBackJoin{
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.409);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 #join{
@@ -445,6 +461,9 @@ input[type=email]{
   font-weight: 600;
   color: rgb(3, 32, 60);
 }
+
+
+/* ! ---------------------- section-9 ---------------------------------------------*/
 
 #footer{
   height: 300px;
@@ -490,7 +509,12 @@ input[type=email]{
   width: 20%;
 
 }
-  @media screen and (max-width:768px) {
+
+
+/* ! -------------------------------------- Media Query for Tablet (1024px) -----------------------------------*/
+
+
+  @media screen and (max-width:1024px) {
     li:nth-child(n+2){
             visibility: hidden;
     }
@@ -566,10 +590,14 @@ input[type=email]{
       width: 85%;
       text-align: center;
     }
-
     #join{
+      height: fit-content;
+    }
+    #whiteBackJoin{
       flex-direction: column;
-      padding: 30px 0px;
+      padding: 40px 0px;
+    }#joinText{
+      padding-bottom: 20px;
     }
 
     #footerMain{
@@ -589,8 +617,10 @@ input[type=email]{
     }
 }
 
+/* ! -------------------------------------- Media Query for Phones (767px) ------------------------------------*/
 
-@media screen and (max-width:375px) {
+
+@media screen and (max-width:767px) {
   #headingText{
     display: flex;
     flex-direction: column;
@@ -658,7 +688,7 @@ input[type=email]{
   .subscribe{
     width: 100%;
   }
-  #whiteBack{
+  #whiteBackJoin{
     flex-direction: column;
   }
 
@@ -670,7 +700,7 @@ input[type=email]{
     align-items: center;
   }
   .footerAboutUs{
-    align-items: center;
+    align-items: center; 
     justify-content: center;
   }
   .footerContent{
